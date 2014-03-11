@@ -1,0 +1,41 @@
+body{
+  border-left: 0px;
+}
+
+ul li a:hover { 
+  color: white !important; 
+}
+
+header {
+  text-align: center;
+  background: url("./Photos/Rainbow Star Black Background-Sultan Samad.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-style: normal;
+  font-size: 40px;
+}
+
+img#profile {
+  background-size: cover;
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0);
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  padding: 5px;
+}
+
+article {
+  max-width: 800px;
+  margin: auto;
+}

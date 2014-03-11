@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <head>
   <link href="./normalize.css" rel="stylesheet">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="./main.css" rel='stylesheet'>
+  <link href='bootstrap-3.1.1-dist/css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome!</title>
-  <style>
-    header {
-      text-align: center;
-      background: url("./Photos/Rainbow Star Black Background-Sultan Samad.jpg");
-      background-size: cover;
-      color: white;
-    }
-    a{
-      color: white;
-    }
-    h1 {
-      font-style: normal;
-      font-size: 40px;
-      font-family: "Cambria";
-    }
-    img#profile {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-      padding: 5px;
-    }
-    article {
-      max-width: 800px;
-      margin: auto;
-    }
-    h2{
-      text-align: center;
-    }
-    ul#block{
-      display: block;
-      text-align: center;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-    }
-  </style>
 </head>
-<body>
-  <header>
-    <img id="profile" src="./Photos/IMG-20130213-WA0008.jpg" width="" height="300">
-    <h1><a href="./index.html" style="text-decoration:none">Jun Wan</a></h1>
-    <ul>
-      <li><a href="./about_me.html">About Me</a></li>
-      <li><a href="./interest.html">Interest</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </header>
-<article>
-    <h2>Contact</h2>
-    <p>
-    <ul id="block"><a href="https://www.facebook.com/junwan.goh" target="_blank" style="text-decoration:none;color:blue">Facebook</a></ul>
-    </p>
-</article>
 
+<style>
+.btn{
+  margin: 20px;
+  width: 15%;
+}
+#details{
+  margin-top: 30px;
+}
+</style>
+
+<body>
+   <header>
+    <div class="container">
+      <img id="profile" src="./Photos/IMG-20130213-WA0008.jpg" width="" height="300">
+
+        <h1><a href="./index.html" style="text-decoration:none">Jun Wan</a></h1>
+        <ul>
+          <li><a href="./about_me.html">About Me</a></li>
+          <li><a href="./interest.html">Interest</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <div class="text-center">
+    <article>
+      <h2>Contact</h2>
+
+        <a href="https://www.facebook.com/junwan.goh" target="_blank" class="btn btn-primary">Facebook</a>
+        <a href="https://twitter.com/JunWanGoh" target="_blank" class="btn btn-info">Twitter</a>
+
+<p id="details">Enter your details and I will get in touch with you shortly! :)</p>
+
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./thanks.html';}"></iframe>
+
+        <form action="https://docs.google.com/forms/d/1EkPopnQjzW811MW2ZoAmWGzm-OqGKaqimCeDTAX9Eec/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+          <p>
+            <label>Name</label>
+            <input type="text" name="entry.1662899193" value="" class="ss-q-short" id="entry_1662899193" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+          </p>
+          <p>  
+          <label>Email Address</label>
+            <input type="text" name="entry.2105425268" value="" class="ss-q-short" id="entry_2105425268" dir="auto" aria-label="Email Address  Please input a valid email address." aria-required="true" required="" pattern=".*@.*" title="Please input a valid email address."> 
+          <input type="submit" name="submit" value="Submit" id="ss-submit">
+          </p>
+
+        </form>
+
+    </article>
+  </div>
 </body>
+</html>
