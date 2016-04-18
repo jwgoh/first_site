@@ -1,0 +1,2 @@
+- Use a templating language
+- Use folders to organise files
